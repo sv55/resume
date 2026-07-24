@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Vignesh Sivakumar — Principal Software Engineer with 12+ years of expertise in distributed systems, search grid architectures, and cloud platform optimization.">
+    <meta property="og:title" content="Vignesh Sivakumar | Principal Software Engineer">
+    <meta property="og:description" content="Technical leader with 12+ years building scalable distributed systems, ML feature platforms, and high-performing engineering teams.">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#06060f">
+    <title>Vignesh Sivakumar | Principal Software Engineer</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Floating Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="#hero" class="nav-logo">VS<span style="color: var(--accent-cyan)">.</span></a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="nav-mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <!-- ===== Hero Section ===== -->
+        <section class="hero" id="hero">
+            <canvas class="hero-canvas" id="heroCanvas"></canvas>
+            <div class="hero-glow" id="heroGlow"></div>
+
+            <div class="hero-content">
+                <div class="hero-avatar">
+                    <img src="dp.jpeg" alt="Vignesh Sivakumar" />
+                    <div class="hero-avatar-ring"></div>
+                </div>
+                <p class="hero-greeting">HELLO, I AM</p>
+                <h1 class="hero-name">Vignesh Sivakumar</h1>
+                <p class="hero-title" id="heroTitle">Principal Software Engineer</p>
+                <p class="hero-location">
+                    <i class="fas fa-map-marker-alt"></i> Coimbatore, India
+                </p>
+                <div class="hero-cta-group">
+                    <a href="#experience" class="btn btn-primary">
+                        <i class="fas fa-briefcase"></i> View My Work
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <i class="fas fa-paper-plane"></i> Get In Touch
+                    </a>
+                </div>
+            </div>
+
+            <div class="scroll-indicator">
+                <span>scroll</span>
+                <div class="scroll-line"></div>
+            </div>
+        </section>
+
+        <!-- ===== About Section ===== -->
+        <section class="about" id="about">
+            <div class="container">
+                <span class="section-label reveal">About Me</span>
+                <h2 class="section-title reveal">Professional Summary</h2>
+
+                <div class="about-grid">
+                    <div class="about-text-card reveal reveal-delay-1">
+                        <p class="about-summary" id="aboutSummary"></p>
+                    </div>
+
+                    <div class="stats-grid">
+                        <div class="stat-card reveal reveal-delay-1">
+                            <div class="stat-number" data-target="12" data-suffix="+">0</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                        <div class="stat-card reveal reveal-delay-2">
+                            <div class="stat-number" data-target="3000" data-suffix="+">0</div>
+                            <div class="stat-label">QPS Scaled</div>
+                        </div>
+                        <div class="stat-card reveal reveal-delay-3">
+                            <div class="stat-number" data-target="15" data-suffix="x">0</div>
+                            <div class="stat-label">Throughput Boost</div>
+                        </div>
+                        <div class="stat-card reveal reveal-delay-4">
+                            <div class="stat-number" data-target="200" data-suffix="+">0</div>
+                            <div class="stat-label">ML Features Generated</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Skills Section ===== -->
+        <section class="skills" id="skills">
+            <div class="container">
+                <span class="section-label reveal">What I Know</span>
+                <h2 class="section-title reveal">Technical Expertise</h2>
+
+                <div class="skills-categories">
+                    <!-- Languages -->
+                    <div class="skill-category reveal reveal-delay-1">
+                        <div class="skill-category-header">
+                            <div class="skill-category-icon lang"><i class="fas fa-code"></i></div>
+                            <h3 class="skill-category-name">Programming Languages</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">Scala</span>
+                            <span class="skill-tag">Golang</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Bash</span>
+                        </div>
+                    </div>
+
+                    <!-- AI -->
+                    <div class="skill-category reveal reveal-delay-2">
+                        <div class="skill-category-header">
+                            <div class="skill-category-icon ai"><i class="fas fa-robot"></i></div>
+                            <h3 class="skill-category-name">AI & Agentic Systems</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Autonomous AI Agents</span>
+                            <span class="skill-tag">LangGraph</span>
+                            <span class="skill-tag">CrewAI</span>
+                            <span class="skill-tag">Google ADK</span>
+                            <span class="skill-tag">Strands</span>
+                            <span class="skill-tag">OpenAI Agents SDK</span>
+                            <span class="skill-tag">MCP</span>
+                            <span class="skill-tag">RAG Architectures</span>
+                            <span class="skill-tag">GenAI Feature Generation</span>
+                        </div>
+                    </div>
+
+                    <!-- Frameworks -->
+                    <div class="skill-category reveal reveal-delay-1">
+                        <div class="skill-category-header">
+                            <div class="skill-category-icon framework"><i class="fas fa-layer-group"></i></div>
+                            <h3 class="skill-category-name">Technologies & Frameworks</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Spring Boot</span>
+                            <span class="skill-tag">RESTful APIs</span>
+                            <span class="skill-tag">gRPC</span>
+                            <span class="skill-tag">Scalatra</span>
+                        </div>
+                    </div>
+
+                    <!-- Databases -->
+                    <div class="skill-category reveal reveal-delay-2">
+                        <div class="skill-category-header">
+                            <div class="skill-category-icon db"><i class="fas fa-database"></i></div>
+                            <h3 class="skill-category-name">Databases</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">PostgreSQL</span>
+                            <span class="skill-tag">MySQL</span>
+                            <span class="skill-tag">DynamoDB</span>
+                        </div>
+                    </div>
+
+                    <!-- Cloud -->
+                    <div class="skill-category reveal reveal-delay-3">
+                        <div class="skill-category-header">
+                            <div class="skill-category-icon cloud"><i class="fas fa-cloud"></i></div>
+                            <h3 class="skill-category-name">Cloud & DevOps</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">AWS</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">Kubernetes</span>
+                            <span class="skill-tag">Terraform</span>
+                            <span class="skill-tag">GitLab CI/CD</span>
+                            <span class="skill-tag">Jenkins</span>
+                        </div>
+                    </div>
+
+                    <!-- System Design -->
+                    <div class="skill-category reveal reveal-delay-4">
+                        <div class="skill-category-header">
+                            <div class="skill-category-icon arch"><i class="fas fa-sitemap"></i></div>
+                            <h3 class="skill-category-name">System Design & Architecture</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Microservices</span>
+                            <span class="skill-tag">Event-Driven Architecture</span>
+                            <span class="skill-tag">Kafka</span>
+                            <span class="skill-tag">SQS</span>
+                            <span class="skill-tag">Redis</span>
+                            <span class="skill-tag">Memcached</span>
+                            <span class="skill-tag">Lucene</span>
+                            <span class="skill-tag">OpenSearch</span>
+                            <span class="skill-tag">Hadoop</span>
+                        </div>
+                    </div>
+
+                    <!-- Testing -->
+                    <div class="skill-category reveal reveal-delay-1">
+                        <div class="skill-category-header">
+                            <div class="skill-category-icon test"><i class="fas fa-vial"></i></div>
+                            <h3 class="skill-category-name">Testing & Debugging</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">JUnit</span>
+                            <span class="skill-tag">Postman</span>
+                            <span class="skill-tag">Swagger</span>
+                            <span class="skill-tag">k6</span>
+                        </div>
+                    </div>
+
+                    <!-- Security -->
+                    <div class="skill-category reveal reveal-delay-2">
+                        <div class="skill-category-header">
+                            <div class="skill-category-icon security"><i class="fas fa-shield-halved"></i></div>
+                            <h3 class="skill-category-name">Security & Auth</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">OAuth</span>
+                            <span class="skill-tag">JWT</span>
+                            <span class="skill-tag">SAML</span>
+                            <span class="skill-tag">OpenID Connect</span>
+                        </div>
+                    </div>
+
+                    <!-- Collaboration -->
+                    <div class="skill-category reveal reveal-delay-3">
+                        <div class="skill-category-header">
+                            <div class="skill-category-icon collab"><i class="fas fa-users"></i></div>
+                            <h3 class="skill-category-name">Collaboration</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">GitLab</span>
+                            <span class="skill-tag">GitHub</span>
+                            <span class="skill-tag">Agile</span>
+                            <span class="skill-tag">Scrum</span>
+                            <span class="skill-tag">Kanban</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Experience Section ===== -->
+        <section class="experience" id="experience">
+            <div class="container">
+                <span class="section-label reveal">Career Path</span>
+                <h2 class="section-title reveal">Professional Journey</h2>
+
+                <div class="timeline">
+                    <!-- Job 1 -->
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card" data-expandable>
+                            <div class="timeline-header">
+                                <div>
+                                    <div class="timeline-role">Principal Software Engineer</div>
+                                    <div class="timeline-company"><i class="fas fa-building"></i> Socure India Private Limited</div>
+                                    <div class="timeline-location">Chennai (Remote)</div>
+                                </div>
+                                <span class="timeline-date"><i class="far fa-calendar"></i> Sep 2025 — Jul 2026</span>
+                            </div>
+                            <div class="timeline-expand-hint">
+                                <i class="fas fa-chevron-down"></i> Click to expand
+                            </div>
+                            <div class="timeline-details">
+                                <ul>
+                                    <li>Spearheaded end-to-end architectural vision to decompose heavy legacy monolith workflows into modular, high-performance microservices, establishing scalable APIs and RiskOS-native integration pathways.</li>
+                                    <li>Architected and directed technical deprecation roadmap for legacy ID+ systems, ensuring a zero-downtime transition to next-generation platforms.</li>
+                                    <li>Mentored senior and staff engineers, standardized design and code review workflows across the organization.</li>
+                                    <li>Led efforts to enhance system resilience through automated CI/CD pipelines and acted as technical lead during high-severity global infrastructure incidents.</li>
+                                    <li>Engineered enterprise-grade shared software libraries including ultra-low-latency distributed caching module and robust protocol buffer validation frameworks.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Job 2 -->
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card" data-expandable>
+                            <div class="timeline-header">
+                                <div>
+                                    <div class="timeline-role">Staff Software Engineer</div>
+                                    <div class="timeline-company"><i class="fas fa-building"></i> Socure India Private Limited</div>
+                                    <div class="timeline-location">Chennai (Remote)</div>
+                                </div>
+                                <span class="timeline-date"><i class="far fa-calendar"></i> Sep 2023 — Sep 2025</span>
+                            </div>
+                            <div class="timeline-expand-hint">
+                                <i class="fas fa-chevron-down"></i> Click to expand
+                            </div>
+                            <div class="timeline-details">
+                                <ul>
+                                    <li>Designed multi-parameter fuzzy search OpenSearch query engine for AML screening, scaling to 2,500+ QPS with sub-150ms latency while passing 98% of name-degradation match tests.</li>
+                                    <li>Led structural re-architecture of core monolithic service into decoupled modular components, scaling capacity from 350 QPS to 3,000 QPS.</li>
+                                    <li>Architected OpenSearch cluster performance tuning and shard allocation strategies, driving a 67% reduction in total infrastructure costs.</li>
+                                    <li>Overhauled real-time ML feature computation, reducing redundant feature calculations by 90% per request.</li>
+                                    <li>Rearchitected internal rate-limiting system into language- and platform-agnostic, no-code solution.</li>
+                                    <li>Architected low-code external vendor integration framework, reducing onboarding effort by 50%.</li>
+                                    <li>Utilized Generative AI to launch a new product within 48 hours, auto-generating 200+ production ML features with zero operational bugs.</li>
+                                    <li>Designed elastic search layer leveraging Amazon DynamoDB for cost optimization.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Job 3 -->
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card" data-expandable>
+                            <div class="timeline-header">
+                                <div>
+                                    <div class="timeline-role">Senior Software Engineer II</div>
+                                    <div class="timeline-company"><i class="fas fa-building"></i> Socure India Private Limited</div>
+                                    <div class="timeline-location">Chennai (Remote)</div>
+                                </div>
+                                <span class="timeline-date"><i class="far fa-calendar"></i> Sep 2022 — Sep 2023</span>
+                            </div>
+                            <div class="timeline-expand-hint">
+                                <i class="fas fa-chevron-down"></i> Click to expand
+                            </div>
+                            <div class="timeline-details">
+                                <ul>
+                                    <li>Rearchitected internal asynchronous request-auditing pipelines, eliminating database locks and queuing bottlenecks, resulting in over 50% increase in system throughput.</li>
+                                    <li>Developed priority-aware batch job orchestration system enabling data science teams to submit heavy analysis workloads while enforcing request-rate limits.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Job 4 -->
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card" data-expandable>
+                            <div class="timeline-header">
+                                <div>
+                                    <div class="timeline-role">Senior Software Engineer I</div>
+                                    <div class="timeline-company"><i class="fas fa-building"></i> Socure India Private Limited</div>
+                                    <div class="timeline-location">Chennai (Remote)</div>
+                                </div>
+                                <span class="timeline-date"><i class="far fa-calendar"></i> Jan 2021 — Sep 2022</span>
+                            </div>
+                            <div class="timeline-expand-hint">
+                                <i class="fas fa-chevron-down"></i> Click to expand
+                            </div>
+                            <div class="timeline-details">
+                                <ul>
+                                    <li>Co-designed a low-code framework for ML feature generation, reducing feature coding time by over 65% and accelerating time-to-market.</li>
+                                    <li>Redesigned ML model hot-reloading mechanisms, reducing latency spike occurrences by over 97%.</li>
+                                    <li>Optimized core ETL framework data pipelines, accelerating throughput from 67,000 to over 1,000,000 requests/hour (~15x increase).</li>
+                                    <li>Stabilized legacy auditing databases by implementing critical query optimizations, preventing storage exhaustion.</li>
+                                    <li>Developed vendor API call tracking and telemetry service for enhanced budget planning and client billing accuracy.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Job 5 -->
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card" data-expandable>
+                            <div class="timeline-header">
+                                <div>
+                                    <div class="timeline-role">Member of Technical Staff</div>
+                                    <div class="timeline-company"><i class="fas fa-building"></i> Zoho Corporation Private Limited</div>
+                                    <div class="timeline-location">Chennai</div>
+                                </div>
+                                <span class="timeline-date"><i class="far fa-calendar"></i> Jun 2014 — Dec 2020</span>
+                            </div>
+                            <div class="timeline-expand-hint">
+                                <i class="fas fa-chevron-down"></i> Click to expand
+                            </div>
+                            <div class="timeline-details">
+                                <ul>
+                                    <li>Designed and implemented a high-concurrency, multi-tenant distributed search grid capable of ingesting and querying millions of documents daily across multiple enterprise applications.</li>
+                                    <li>Engineered automated primary data center detection and multi-backup region replication mechanisms for instant failover.</li>
+                                    <li>Authored and merged patches into the Apache Hadoop codebase, fixing critical edge-case bugs.</li>
+                                    <li>Engineered custom data locality logic for Hadoop to optimize processing relative to server states.</li>
+                                    <li>Designed an offline web search framework using browser IndexedDB for network-disconnected usage.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Education Section ===== -->
+        <section class="education" id="education">
+            <div class="container">
+                <span class="section-label reveal">Background</span>
+                <h2 class="section-title reveal">Education</h2>
+
+                <div class="edu-card reveal reveal-delay-1">
+                    <div class="edu-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="edu-university">Anna University</h3>
+                    <p class="edu-degree">Bachelor of Technology — Information Technology</p>
+                    <p class="edu-year"><i class="fas fa-map-marker-alt"></i> Chennai, India · Class of 2014</p>
+                    <div class="edu-gpa">
+                        <span class="edu-gpa-label">GPA</span>
+                        <span class="edu-gpa-value">9.56 / 10</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Contact Section ===== -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="contact-inner">
+                    <span class="section-label reveal">Get in Touch</span>
+                    <h2 class="section-title reveal">Let's Connect</h2>
+                    <p class="contact-subtitle reveal reveal-delay-1">
+                        Looking for a seasoned architect to scale your systems? I'm always open to discussing new projects, technical challenges, or opportunities.
+                    </p>
+
+                    <div class="contact-cards reveal reveal-delay-2">
+                        <a href="mailto:vignesh.sivakumar1011@gmail.com" class="contact-card" id="emailCard">
+                            <div class="contact-card-icon email">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-card-info">
+                                <div class="contact-card-label">Email</div>
+                                <div class="contact-card-value">vignesh.sivakumar1011@gmail.com</div>
+                            </div>
+                        </a>
+
+                        <a href="tel:+919791806575" class="contact-card" id="phoneCard">
+                            <div class="contact-card-icon phone">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-card-info">
+                                <div class="contact-card-label">Phone</div>
+                                <div class="contact-card-value">+91 97918 06575</div>
+                            </div>
+                        </a>
+
+                        <div class="contact-card" id="locationCard">
+                            <div class="contact-card-icon location">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-card-info">
+                                <div class="contact-card-label">Location</div>
+                                <div class="contact-card-value">Coimbatore, India</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">&copy; 2026 <span class="gradient-text">Vignesh Sivakumar</span>. Crafted with passion.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
