@@ -1226,6 +1226,11 @@ body::before {
   color: var(--accent-amber);
 }
 
+.contact-card-icon.linkedin {
+  background: rgba(10, 102, 194, 0.1);
+  color: #0a66c2;
+}
+
 .contact-card-info {
   text-align: left;
   min-width: 0;
