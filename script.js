@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
             this.speedY = (Math.random() - 0.5) * 0.4;
             this.opacity = Math.random() * 0.4 + 0.1;
             // Pick from accent colors
-            const colors = ['0, 212, 255', '123, 47, 247', '0, 229, 160', '255, 179, 71'];
+            const colors = ['0, 153, 204', '106, 31, 224', '0, 168, 112', '224, 138, 0'];
             this.color = colors[Math.floor(Math.random() * colors.length)];
         }
         update() {
@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const dist = Math.sqrt(dx * dx + dy * dy);
                 if (dist < 120) {
                     ctx.beginPath();
-                    ctx.strokeStyle = `rgba(0, 212, 255, ${0.06 * (1 - dist / 120)})`;
+                    ctx.strokeStyle = `rgba(0, 153, 204, ${0.1 * (1 - dist / 120)})`;
                     ctx.lineWidth = 0.5;
                     ctx.moveTo(particles[i].x, particles[i].y);
                     ctx.lineTo(particles[j].x, particles[j].y);
@@ -100,6 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const titles = [
         'Principal Software Engineer',
         'Distributed Systems Architect',
+        'AI & Agentic Systems Engineer',
         'Cloud Platform Optimizer',
         'Technical Leader & Mentor'
     ];
